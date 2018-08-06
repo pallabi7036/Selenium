@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test1(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="assignment7.Campaigns">
+        <methods>
+          <include name="configAC"/>
+          <include name="configBC"/>
+          <include name="configAM"/>
+          <include name="createcampaignsTest"/>
+          <include name="configBM"/>
+        </methods>
+      </class> <!-- assignment7.Campaigns -->
+      <class name="driver.CRMTest">
+        <methods>
+          <include name="configAC"/>
+          <include name="configBC"/>
+          <include name="configAM"/>
+          <include name="EndToEnd"/>
+          <include name="configBM"/>
+          <include name="DeleteOrganization"/>
+        </methods>
+      </class> <!-- driver.CRMTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test thread-count="5" name="Test2(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="assignment7.Organization">
+        <methods>
+          <include name="createorganizationTest"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+          <include name="configAM"/>
+          <include name="configBM"/>
+        </methods>
+      </class> <!-- assignment7.Organization -->
+      <class name="driver.CRMTest">
+        <methods>
+          <include name="configAC"/>
+          <include name="configBC"/>
+          <include name="configAM"/>
+          <include name="EndToEnd"/>
+          <include name="configBM"/>
+          <include name="DeleteOrganization"/>
+        </methods>
+      </class> <!-- driver.CRMTest -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
